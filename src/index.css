@@ -82,24 +82,24 @@ button:focus-visible {
 
 
 /* start of the taiwlind css */
-.navBar{
+.navBar {
 	@apply dark:bg-[#080D19] bg-white py-4 px-7 shadow-md z-10 border-black absolute dark:shadow-md dark:shadow-blue-500/50 w-full fixed top-0 left-0
 }
 
-.portFolio{
+.portFolio {
 	@apply font-normal text-3xl leading-6 text-gray-800 dark:text-white font-kaushan
 }
 
-.toggleSwitch{
+.toggleSwitch {
 	@apply p-2 bg-transparent border border-gray-300 dark:border-[#f4f4f5] rounded-full dark:hover:border-blue-500
 }
 
 /* home page css */
-.home{
+.home {
 	@apply w-screen h-screen bg-sky-50/90 pl-10 pr-20 flex justify-between items-center dark:bg-[#060d1e]
 }
 
-.title{
+.title {
 	@apply flex font-kaushan text-5xl font-bold dark:text-white text-gray-800
 }
 
@@ -107,14 +107,143 @@ button:focus-visible {
 	@apply mt-3 text-4xl text-gray-800 dark:text-white
 } */
 
-.skillsType{
+.skillsType {
 	@apply mt-8 text-2xl font-bold text-gray-800 dark:text-white font-fira
 }
 
-.shortIntro{
+.shortIntro {
 	@apply text-lg mt-1 text-gray-800 dark:text-white font-fira
 }
 
-.color_check{
+.color_check {
 	color: #060d1e;
+}
+
+.skillsDiv {
+	@apply w-full h-screen pt-32 bg-sky-50/90 pl-10 pr-20 dark:bg-[#060d1e]
+}
+
+.development {
+	@apply text-3xl text-gray-800 dark:text-white flex gap-12
+}
+
+.skillImg {
+	@apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-4;
+}
+
+.skillRow {
+	@apply flex justify-center gap-5
+}
+
+.skillCard {
+	@apply w-32 border border-indigo-600 rounded-lg p-4 hover:scale-110 transition delay-150 duration-300 ease-in-out;
+	position: relative;
+	/* display: flex; */
+	overflow: hidden;
+}
+
+.skillCard::before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+	height: 130%;
+	animation: rotBGimg 3s linear infinite;
+	transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.skillCard::after {
+	content: '';
+	position: absolute;
+	background: #07182E;
+	;
+	inset: 1px;
+	border-radius: 15px;
+}
+
+
+.skillCardImg {
+	@apply w-1/2
+}
+
+.skillCardText {
+	@apply mt-6 flex justify-center text-2xl text-gray-800 dark:text-white
+}
+
+/* From Uiverse.io by bhaveshxrawat */
+.card {
+	width: 190px;
+	height: 254px;
+	background: #07182E;
+	position: relative;
+	display: flex;
+	place-content: center;
+	place-items: center;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.card h2 {
+	z-index: 1;
+	color: white;
+	font-size: 2em;
+}
+
+.card::before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+	height: 130%;
+	animation: rotBGimg 3s linear infinite;
+	transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.card::after {
+	content: '';
+	position: absolute;
+	background: #07182E;
+	;
+	inset: 5px;
+	border-radius: 15px;
+}
+
+/* .card:hover:before {
+	background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+	animation: rotBGimg 3.5s linear infinite;
+  } */
+
+
+@keyframes rotateBorder {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-rotate {
+	animation: rotateBorder 3s linear infinite;
 }

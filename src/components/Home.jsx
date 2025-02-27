@@ -1,5 +1,5 @@
 import React from 'react';
-import boyCoding from '../assets/boyCoding.png';
+import boyCoding from '../assets/manCoding.png';
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
  
