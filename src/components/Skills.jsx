@@ -11,9 +11,15 @@ import linux from '../assets/linux.svg';
 import bootstrap from '../assets/bootstrap.svg';
 import mongodb from '../assets/mongodb.svg';
 import mysql from '../assets/mysql.svg';
+import kvm from '../assets/kvm.svg';
 import virtuozzo from '../assets/virtuozzo.svg';
 import proxmox from '../assets/proxmox.svg';
 import SkillCard from "./SkillCard";
+import Cpu from "./Cpu";
+import Test from "./Test";
+
+const skillIcons = [python, javascript, php, nodeJs, react, html, css, tailwind, bootstrap, linux, mongodb, mysql, kvm, virtuozzo, proxmox];
+const skillNames = ['Python', 'JavaScript', 'PHP', 'NodeJs', 'React', 'HTML', 'CSS', 'Tailwind', 'Bootstrap', 'Linux', 'MongoDB', 'MySQL', 'KVM', 'Virtuozzo', 'Proxmox'];
 
 const Skills = () => {
 	return (
@@ -24,110 +30,38 @@ const Skills = () => {
 					<div className="w-1/2">
 						<h3 className="">Development Skills</h3>
 						<hr className="border-gray-500"></hr>
+						<p className="developmentText">
+							I am a passionate full-stack developer with expertise in technologies like Python, JavaScript, PHP, Node.js, and React. From building dynamic web applications to managing server infrastructure with Linux, Virtuozzo, and Proxmox, I love crafting scalable and efficient solutions. My skills extend to front-end development with HTML, CSS, Tailwind, and Bootstrap, ensuring modern and responsive designs. On the backend, I work with databases like MongoDB and MySQL, delivering data-driven applications. Always eager to learn and grow, I thrive on solving complex challenges and optimizing performance.
+						</p>
+						<div className="flex justify-center">
+							<Cpu/>
+						</div>
 					</div>
 					<div className="gap-4">
 						<div className="skillImg">
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={python} alt="python" />
-								</div>
-								<p className="skillCardText">Python</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={javascript} alt="JavaScript" />
-								</div>
-								<p className="skillCardText">JavaScript</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={php} alt="PHP" />
-								</div>
-								<p className="skillCardText">PHP</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={nodeJs} alt="NodeJs" />
-								</div>
-								<p className="skillCardText">NodeJs</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={react} alt="React" />
-								</div>
-								<p className="skillCardText">React</p>
-							</div>
+							{skillIcons.slice(0, 5).map((icon, index) => (
+								<SkillCard title={skillNames[index]} icon={icon} />
+							))}
 						</div>
 						<div className="skillImg">
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={html} alt="HTML" />
-								</div>
-								<p className="skillCardText">HTML</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={css} alt="React" />
-								</div>
-								<p className="skillCardText">CSS</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={tailwind} alt="tailwind CSS" />
-								</div>
-								<p className="skillCardText">Tailwind</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={linux} alt="Linux" />
-								</div>
-								<p className="skillCardText">Linux</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={bootstrap} alt="Linux" />
-								</div>
-								<p className="skillCardText">Bootstrap</p>
-							</div>
+							{skillIcons.slice(6, 11).map((icon, index) => (
+								<SkillCard title={skillNames[index + 6]} icon={icon} />
+							))}
 						</div>
 						<div className="skillRow">
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={virtuozzo} alt="React" />
-								</div>
-								<p className="skillCardText">Virtuozzo</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={proxmox} alt="React" />
-								</div>
-								<p className="skillCardText">Proxmox</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={mongodb} alt="React" />
-								</div>
-								<p className="skillCardText">MongoDB</p>
-							</div>
-							<div className="skillCard">
-								<div className="flex justify-center">
-									<img className="skillCardImg" src={mysql} alt="React" />
-								</div>
-								<p className="skillCardText">MySQL</p>
-							</div>
+							{skillIcons.slice(12, 16).map((icon, index) => (
+								<SkillCard title={skillNames[index + 12]} icon={icon} />
+							))}
 						</div>
 					</div>
 				</div>
-				<div className='skillCard'>
-					<div className="z-10">
-						<img className="skillCardImg" src={proxmox} alt='proxmox' />
-						<p className="skillCardText">ProxMox</p>
+				<div className="flex justify-center">
+					<div className="section-banner mb-5">
 					</div>
 				</div>
-				<div class="card">
-					<h2>CARD</h2>
+				<div className="pb-40">
+					<Test />
 				</div>
-				<SkillCard title="React"/>
 			</div>
 		</>
 	);
