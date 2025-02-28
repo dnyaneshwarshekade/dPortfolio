@@ -21,16 +21,23 @@ import premierpro from '../assets/premierpro.svg';
 import tortoisesvn from '../assets/tortoisesvn.svg';
 import git from '../assets/git.svg';
 import github from '../assets/github.svg';
+// importing png because i did not found the svg for winscp as well as for for beyond compare
 import winscp from '../assets/winscp.png';
 import beyondcompare from '../assets/beyondcompare.png';
 import putty from '../assets/putty.svg';
 import powerbi from '../assets/powerbi.svg';
 import tableau from '../assets/tableau.svg';
 import hadoop from '../assets/hadoop.svg';
+import numpy from '../assets/numpy.svg';
+import pandas from '../assets/pandas.svg';
+import matplotlib from '../assets/matplotlib.svg';
+import scikitlearn from '../assets/scikitlearn.svg';
+import tensorflow from '../assets/tensorflow.svg';
+import aiml from '../assets/aiml.svg';
 import SkillCard from "./SkillCard";
 
-const skillIcons = [python, javascript, php, nodeJs, react, html, css, tailwind, bootstrap, linux, mongodb, mysql, kvm, virtuozzo, proxmox, canva, photoshop, coreldraw, premierpro, tortoisesvn, git, github, winscp, beyondcompare, putty, powerbi, tableau, hadoop];
-const skillNames = ['Python', 'JavaScript', 'PHP', 'NodeJs', 'React', 'HTML', 'CSS', 'Tailwind', 'Bootstrap', 'Linux', 'MongoDB', 'MySQL', 'KVM', 'Virtuozzo', 'Proxmox', 'Canva', 'Photoshop', 'CorelDraw', 'Premier Pro', 'TortoiseSVN', 'Git', 'GitHub', 'WinSCP', 'Compare', 'Putty', 'Power BI', 'Tableau', 'Hadoop'];
+const skillIcons = [python, javascript, php, nodeJs, react, html, css, tailwind, bootstrap, linux, mongodb, mysql, kvm, virtuozzo, proxmox, canva, photoshop, coreldraw, premierpro, tortoisesvn, git, github, winscp, beyondcompare, putty, powerbi, tableau, hadoop, numpy, pandas, matplotlib, scikitlearn, tensorflow, aiml];
+const skillNames = ['Python', 'JavaScript', 'PHP', 'NodeJs', 'React', 'HTML', 'CSS', 'Tailwind', 'Bootstrap', 'Linux', 'MongoDB', 'MySQL', 'KVM', 'Virtuozzo', 'Proxmox', 'Canva', 'Photoshop', 'CorelDraw', 'Premier Pro', 'TortoiseSVN', 'Git', 'GitHub', 'WinSCP', 'Compare', 'Putty', 'Power BI', 'Tableau', 'Hadoop', 'Numpy', 'Pandas', 'Matplotlib', 'Scikit-Learn', 'TensorFlow', 'AIML'];
 
 const Skills = () => {
 	return (
@@ -48,20 +55,15 @@ const Skills = () => {
 					</div>
 					<div className="w-1/2 gap-4">
 						<div className="skillImg">
-							{skillIcons.slice(0, 5).map((icon, index) => (
+							{skillIcons.slice(0, 15).map((icon, index) => (
 								<SkillCard title={skillNames[index]} icon={icon} />
-							))}
-						</div>
-						<div className="skillImg">
-							{skillIcons.slice(5, 15).map((icon, index) => (
-								<SkillCard title={skillNames[index + 5]} icon={icon} />
 							))}
 						</div>
 					</div>
 				</div>
 				<div className="development pt-28">
 					<div className="w-1/2 gap-4">
-						<div className="skillRow">
+						<div className="skillImg">
 							{skillIcons.slice(15, 19).map((icon, index) => (
 								<SkillCard title={skillNames[index + 15]} icon={icon} />
 							))}
@@ -90,7 +92,7 @@ const Skills = () => {
 								<SkillCard title={skillNames[index + 19]} icon={icon} />
 							))}
 						</div>
-						<div className="skillrow">
+						<div className="skillImg">
 							<div>
 							<SkillCard title='Putty' icon={putty} />
 							</div>
@@ -99,8 +101,8 @@ const Skills = () => {
 				</div>
 				<div className="development py-28">
 					<div className="w-1/2 gap-4">
-						<div className="skillRow">
-							{skillIcons.slice(25, 28).map((icon, index) => (
+						<div className="skillImg">
+							{skillIcons.slice(25, 34).map((icon, index) => (
 								<SkillCard title={skillNames[index + 25]} icon={icon} />
 							))}
 						</div>

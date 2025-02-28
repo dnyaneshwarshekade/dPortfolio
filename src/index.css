@@ -132,7 +132,7 @@ button:focus-visible {
 }
 
 .skillImg {
-	@apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-6;
+	@apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-4;
 }
 
 .skillRow {
