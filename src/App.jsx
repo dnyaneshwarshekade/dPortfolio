@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Journey from './components/Journey';
 import Skills from './components/Skills';
+import Resume from './components/resume';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
 					<Route path="/" element={<Home/>}></Route>
 					<Route path="/journey" element={<Journey/>}></Route>
 					<Route path="/skills" element={<Skills/>}></Route>
+					<Route path="/resume" element={<Resume/>}></Route>
 				</Routes>
 			</BrowserRouter>
 		</>

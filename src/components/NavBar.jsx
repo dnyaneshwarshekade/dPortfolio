@@ -8,7 +8,7 @@ function NavBar({toggleTheme}) {
 		<>
 		<header className="navBar">
 			<nav className="flex items-center justify-between">
-				<h2 className="portFolio">Portfolio</h2>
+				<h2 className="portFolio"><Link to="/">Portfolio</Link></h2>
 				<div className="flex space-x-5 justify-center items-center pl-2">
 					<ul className="flex space-x-4 dark:text-white">
                         <li>
@@ -21,7 +21,7 @@ function NavBar({toggleTheme}) {
                             <Link to="/skills">Portfolio</Link>
                         </li>
                         <li>
-                            Resume
+                            <Link to="/resume">Resume</Link>
                         </li>
                     </ul>
 					<button onClick={toggleTheme} className='toggleSwitch'>

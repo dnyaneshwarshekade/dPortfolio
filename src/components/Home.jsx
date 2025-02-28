@@ -2,6 +2,7 @@ import React from 'react';
 import boyCoding from '../assets/manCoding.png';
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
+import Timeline from './Timeline';
 
 function Home() {
     return (
@@ -10,12 +11,12 @@ function Home() {
                 <div className='ml-10'>
                     <div>
                         <h1 className='title'>
-                            Hey There 👋 <div class="say-hi">
+                            Hey There 👋 <div className="say-hi">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 71 74"
-                                    class="icon_say-hi"
+                                    className="icon_say-hi"
                                 >
                                     <path
                                         fill="black"
@@ -62,7 +63,7 @@ function Home() {
                                         className="animate-spin h-5 w-5 mr-3 text-white"
                                     >
                                         <circle
-                                            stroke-width="4"
+                                            strokeWidth="4"
                                             stroke="currentColor"
                                             r="10"
                                             cy="12"
@@ -107,6 +108,7 @@ function Home() {
                     </button>
                 </a>
             </div> */}
+            <Timeline/>
         </>
     );
 }
