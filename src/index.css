@@ -147,3 +147,6 @@ button:focus-visible {
 	@apply mt-4 flex justify-center text-xl text-gray-900 dark:text-white text-nowrap
 }
 
+.journeyCard{
+	@apply w-64 p-4	 bg-white dark:bg-gray-800 text-sm dark:text-white text-black rounded-lg shadow-lg text-wrap cursor-pointer
+}

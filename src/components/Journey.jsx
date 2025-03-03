@@ -1,90 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
+import SVGComponent from "./SVGComponent";
+import Bus from "./Bus";
+import Career from "./Career";
+import InfoModal from "./InfoModal";
 
 const Journey = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [journeyTitle, setJourneyTitle] = useState("");
+    const [journeyMessage, setJourneyMessage] = useState("");
+
+    const modalOpen = (title, message) => {
+        setIsModalOpen(true);
+        setJourneyTitle(title);
+        setJourneyMessage(message);
+    };
+
+    const modalClose = () => {
+        setIsModalOpen(false);
+        setJourneyTitle("");
+        setJourneyMessage("");
+    };
+
     return (
-        <>  
-            <div className="home">
-                {/* master in computer science */}
-                <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative mx-4 -mt-6 h-32 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        <div className="flex justify-center mt-12 text-2xl">MSC (Data Science)</div>
+        <>
+            <div className="w-screen h-full bg-sky-50/90 px-10 flex justify-between items-center dark:bg-[#060d1e]">
+                <div className="pt-14 w-full relative">
+                    {/* Main SVG Path */}
+                    <SVGComponent className="relative w-full" />
+                    <div className="absolute top-[21%] left-[4%] w-[100px] h-[100px] transform -translate-x-1/2 -translate-y-1/2">
+                        <Bus />
                     </div>
-                    <div className="p-6">
-                        <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                            Tailwind card
-                        </h5>
-                        <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                        </p>
+                    {/* Journey Cards */}
+                    <div className="absolute top-[32%] left-[8%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("SSC", "2006 - 2013")}>
+                            📌 (SSC) (2006 - 2013)
+                        </div>
                     </div>
-                    <div className="p-6 pt-0">
-                        <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                            Read More
-                        </button>
+                    <div className="absolute top-[48%] left-[20%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("Diploma in Engg", "2013 - 2016")}>
+                            📌 Diploma in Engg (2013 - 2016)
+                        </div>
                     </div>
-                </div>
-                {/* bachelor of engineering */}
-                <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative mx-4 -mt-6 h-32 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        <div className="flex justify-center mt-12 text-2xl">Bachelor of Engineering</div>
-                        <p className="flex justify-center">(2019)</p>
+                    <div className="absolute top-[65%] left-[15%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("Bachelor of Engg", "2016-2019")}>
+                            📌 Bachelor of Engg (2016-2019)
+                        </div>
                     </div>
-                    <div className="p-6">
-                        <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                            Tailwind card
-                        </h5>
-                        <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                        </p>
+                    <div className="absolute top-[77%] left-[55%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("M.SC (Data Science)", "2023 - 2025")}>
+                            📌 M.SC (Data Science) (2023 - 2025)
+                        </div>
                     </div>
-                    <div className="p-6 pt-0">
-                        <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                            Read More
-                        </button>
+                    <div className="absolute top-[65%] left-[35%] w-[100px] h-[100px] transform -translate-x-1/2 -translate-y-1/2">
+                        <Career />
                     </div>
-                </div>
-                {/* Diploma in engineering */}
-                <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative mx-4 -mt-6 h-32 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        <div className="flex justify-center mt-12 text-2xl">Diploma in Engineering</div>
+                    <div className="absolute top-[57%] left-[55%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("Work Experience", "Lithotech Food (2019-2021)")}>
+                            📌 <a className="hover:text-indigo-400" target="_blank" href="https://www.lithotechfoodspicemachinery.com/">Lithotech Food </a> (2019-2021)
+                        </div>
                     </div>
-                    <div className="p-6">
-                        <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                            Tailwind card
-                        </h5>
-                        <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                        </p>
+                    <div className="absolute top-[37%] left-[41%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("Work Experience", "Grade & Grind Technologies (2021)")}>
+                            <a className="hover:text-indigo-400" target="_blank" href="http://ggtpl.com/">Grade & Grind Technologies 📌</a>(2021)
+                        </div>
                     </div>
-                    <div className="p-6 pt-0">
-                        <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                            Read More
-                        </button>
-                    </div>
-                </div>
-                {/* SSC */}
-                <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative mx-4 -mt-6 h-32 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        <div className="flex justify-center mt-12 text-2xl">SSC</div>
-                        <p>2013</p>
-                    </div>
-                    <div className="p-6">
-                        <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                            Tailwind card
-                        </h5>
-                        <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                        </p>
-                    </div>
-                    <div className="p-6 pt-0">
-                        <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                            Read More
-                        </button>
+                    <div className="absolute top-[30%] right-[5%] text-black dark:text-white transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="journeyCard" onClick={() => modalOpen("Work Experience", "Softaculous.ltd (2021 - Current)")}>
+                            📌<a className="hover:text-indigo-400" target="_blank" href="http://softaculous.com/">Softaculous.ltd</a> (2021 - Current)
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* ✅ Fixed InfoModal */}
+            {isModalOpen && (
+                <InfoModal 
+                    close={modalClose} 
+                    title={journeyTitle} 
+                    message={journeyMessage} 
+                />
+            )}
         </>
-    )
+    );
 };
 
 export default Journey;

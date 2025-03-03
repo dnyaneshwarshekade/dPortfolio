@@ -102,7 +102,7 @@ const Skills = () => {
 				<div className="development py-28">
 					<div className="w-1/2 gap-4">
 						<div className="skillImg">
-							{skillIcons.slice(25, 34).map((icon, index) => (
+							{skillIcons.slice(25, 33).map((icon, index) => (
 								<SkillCard title={skillNames[index + 25]} icon={icon} />
 							))}
 						</div>
