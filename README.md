@@ -1,17 +1,27 @@
-# React + Vite
+# 🌟 My Portfolio Website
 
-🔥 Best Placement Options for Skills
-1️⃣ Inside "My Journey" (Best for Career Focus)
-Since "My Journey" already includes Experience + Education, you can add a "Skills" subsection.
-Example layout:
-🎓 Education
-💼 Experience
-🛠️ Skills (Programming, Tools, Frameworks)
-✅ Best if you want Skills to be part of your career journey.
+Welcome to my **personal portfolio website**! 🚀 This is where I showcase my **projects, skills, and experience** in **web development, data science, and software engineering**.
 
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS, JavaScript, jquery, HTML, CSS
+- **backend:** Python, PHP, Node.js
+- **Version Control:** Git, GitHub, SVN tortoise, Beyond Compare (scooter), Winscp, Puttty
+- **Design Tools:** Photoshop, Canva, CorelDRAW, Premier Pro
+- **Data & Analytics:** Power BI, Tableau, Hadoop 
 
-2️⃣ Inside "Portfolio" (Best if Skills Relate to Projects)
-If your skills are strongly tied to your projects, list them inside "Portfolio" before showing your projects.
-Example layout:
-🛠️ Skills Overview
-🔥 Highlighted Projects
+## 🚀 Installation & Setup
+
+```sh
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+npm install
+npm start
+```
+
+## 🎯 Live Demo
+- [Check out my live portfolio here!](https://pages.github.com/)
+
+## 📬 Contact Me
+GitHub: [dipnangle]()\
+LinkedIn: [Dipesh Nangle]()\
+Email: [dipnangle31@gmail.com]()
