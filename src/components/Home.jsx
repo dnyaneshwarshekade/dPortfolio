@@ -2,9 +2,6 @@ import React from 'react';
 import boyCoding from '../assets/manCoding.png';
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
-import Timeline from './Timeline';
-import path2 from '../assets/path2.svg';
-
 
 function Home() {
     return (
