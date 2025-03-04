@@ -18,7 +18,7 @@ function NavBar({toggleTheme}) {
 							<Link to="/journey">My Journey</Link>
                         </li>
                         <li>
-                            <Link to="/skills">Portfolio</Link>
+                            <Link to="/skills">Skills</Link>
                         </li>
                         <li>
                             <Link to="/resume">Resume</Link>
