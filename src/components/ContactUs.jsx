@@ -7,19 +7,19 @@ const ContactUs = () => {
                 <div className="flex flex-row gap-2">
                     <a target='_blank' href="https://www.linkedin.com/in/dipesh-nangle-69419613a/">
                         <button
-                            className="w-[50px] h-[50px] outline-none border-none bg-white rounded-[90px_5px_5px_5px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#03A9F4] group flex items-center justify-center" href=""
+                            className="w-[50px] h-[50px] outline-none border-none bg-white dark:bg-gradient-to-tr dark:from-[#121128]  dark:via-[#1D1A38] dark:to-[#180747] rounded-[90px_5px_5px_5px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#03A9F4] group flex items-center justify-center" href=""
                         >
-                            <svg className="mt-2 ml-2 fill-[#03A9F4] group-hover:fill-white"
+                            <svg className="mt-2 ml-2 fill-[#03A9F4] dark:fill-slate-500 dark:group-hover:fill-[#03A9F4] group-hover:fill-white"
                                 height="20"
                                 width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"/><g stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6 2a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5 5a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zm.5-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M12 10c.34 0 .64.17.82.428A3.5 3.5 0 0 1 14.5 10c2.16 0 3.5 1.926 3.5 3.571V17a1 1 0 1 1-2 0v-3.43c0-.768-.66-1.571-1.5-1.571-.524 0-1.103.285-1.5.963V17a1 1 0 1 1-2 0v-6a1 1 0 0 1 1-1"/></svg>
                         </button>
                     </a>
                     <a target='_blank' href="https://x.com/DipeshNangle">
                         <button
-                            className="w-[50px] h-[50px] outline-none border-none bg-white rounded-[5px_90px_5px_5px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#03A9F4] group flex items-center justify-center"
+                            className="w-[50px] h-[50px] outline-none border-none bg-white dark:bg-gradient-to-tr dark:from-[#121128]  dark:via-[#1D1A38] dark:to-[#180747] rounded-[5px_90px_5px_5px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#03A9F4] group flex items-center justify-center"
                         >
                             <svg
-                                className="mt-2 -ml-2 fill-[#03A9F4] group-hover:fill-white"
+                                className="mt-2 -ml-2 fill-[#03A9F4] dark:fill-slate-500 dark:group-hover:fill-[#03A9F4] group-hover:fill-white"
                                 height="20"
                                 width="20"
                                 viewBox="0 0 48 48"
@@ -35,10 +35,10 @@ const ContactUs = () => {
 
                 <div className="flex flex-row gap-2">
                     <a target='_blank' href="https://github.com/dipnangle">
-                        <button className="w-[50px] h-[50px] outline-none border-none bg-white rounded-[5px_5px_5px_90px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-black group flex items-center justify-center"
+                        <button className="w-[50px] h-[50px] outline-none border-none bg-white dark:bg-gradient-to-tr dark:from-[#121128]  dark:via-[#1D1A38] dark:to-[#180747] rounded-[5px_5px_5px_90px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-black group flex items-center justify-center"
                         >
                             <svg
-                                className="mt-[-0.263rem] ml-2 fill-black group-hover:fill-white"
+                                className="mt-[-0.263rem] ml-2 fill-black dark:fill-slate-500 group-hover:fill-white"
                                 height="20"
                                 width="20"
                                 viewBox="0 0 30 30"
@@ -52,10 +52,10 @@ const ContactUs = () => {
                     </a>
                     <a target='_blank' href="https://discord.com/users/dipnangle">
                         <button
-                            className="w-[50px] h-[50px] outline-none border-none bg-white rounded-[5px_5px_90px_5px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#8c9eff] group flex items-center justify-center"
+                            className="w-[50px] h-[50px] outline-none border-none bg-white dark:bg-gradient-to-tr dark:from-[#121128]  dark:via-[#1D1A38] dark:to-[#180747] rounded-[5px_5px_90px_5px] shadow-lg transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#8c9eff] group flex items-center justify-center border dark:border-indigo-500"
                         >
                             <svg
-                                className="mt-[-0.263rem] -ml-2 fill-[#8c9eff] group-hover:fill-white"
+                                className="mt-[-0.263rem] -ml-2 fill-[#8c9eff] dark:group-hover:fill-[#8c9eff] dark:fill-slate-500 group-hover:fill-white"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 48 48"
                                 width="20"
