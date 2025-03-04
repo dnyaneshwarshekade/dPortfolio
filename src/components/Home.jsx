@@ -2,11 +2,12 @@ import React from 'react';
 import boyCoding from '../assets/manCoding.png';
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
+import ContactUs from './ContactUs';
 
 function Home() {
     return (
         <>
-            <div className='home'>
+            <div className='home relative'>
                 <div className='ml-10'>
                     <div>
                         <h1 className='title'>
@@ -61,6 +62,9 @@ function Home() {
                                     My Journey
                                 </button>
                             </Link>
+                            <div className='absolute bottom-[5%] left-[5%]'>
+                                <ContactUs/>
+                            </div>
                         </div>
                     </div>
                 </div>
