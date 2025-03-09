@@ -23,6 +23,14 @@
                 "Developed strong technical and analytical skills.",
                 "Worked on projects focusing on real-world applications."
             ]
+        },
+        {
+            "title": "M.Sc (Data Science) (2023 - 2025)",
+            "message": [
+                "Pursuing Master of Science in Data Science.",
+                "Gaining expertise in machine learning, data analysis, and big data technologies.",
+                "Working on advanced projects involving predictive modeling and data visualization."
+            ]
         }
     ],
     "experience": [
@@ -43,6 +51,15 @@
                 "Utilized SolidWorks, AutoCAD, and CorelDraw for 2D and 3D layouts.",
                 "Efficiently selected materials, calculated technical data, and generated BOMs to meet client requirements.",
                 "Implemented cost-cutting strategies and ensured material suitability and aesthetics in product development."
+            ]
+        },
+        {
+            "title": "Softaculous.ltd (2021 - Current)",
+            "message": [
+                "Working as a Software Engineer at Softaculous.",
+                "Developing and maintaining web-based applications and tools.",
+                "Collaborating with cross-functional teams to deliver high-quality software solutions.",
+                "Contributing to the development of automation scripts and backend systems."
             ]
         }
     ]
