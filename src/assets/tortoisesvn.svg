@@ -8,7 +8,7 @@ viewBox="0 0 2395.3 1738.6"
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#404D63;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str0 {stroke:#404D63;stroke-width:20;strokeLinecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
     .fil4 {fill:none}
     .fil3 {fill:none;fill-rule:nonzero}
     .fil1 {fill:#404D63;fill-rule:nonzero}
