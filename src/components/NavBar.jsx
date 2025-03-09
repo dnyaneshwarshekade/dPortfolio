@@ -80,7 +80,7 @@ function NavBar({ toggleTheme }) {
 								{isOpen && (<div
 									className='absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-white dark:bg-[#080B0D] ring-1 shadow-lg ring-black/5 focus:outline-hidden'
 									role='menu' aria-orientation='vertical' aria-labelledby='menu-button' tabIndex='-1'>
-									<div className='py-1 text-gray-700 dark:text-white hover:text-blue-300 shadow-sm dark:shadow-md dark:shadow-blue-500/50' role='none'>
+									<div className='py-1 text-gray-700 dark:text-white shadow-sm dark:shadow-md dark:shadow-blue-500/50' role='none'>
 										<ul className=''>
 											<li className='dropdownOption'>
 												<Link to='/' className={pageLocation.pathname === '/' ? 'text-blue-500 font-bold' : ''}>About</Link>
