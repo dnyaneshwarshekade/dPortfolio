@@ -17,6 +17,10 @@
 	@apply lg:hidden md:hidden sm:block
 }
 
+.whf{
+	@apply w-full h-full
+}
+
 .navBar {
 	@apply dark:bg-[#080D19] bg-white py-4 lg:px-7 md:px-7 px-4 shadow-md z-10 border-black absolute dark:shadow-md dark:shadow-blue-500/50 w-full fixed top-0 left-0
 }
@@ -42,6 +46,14 @@
 	@apply w-screen lg:h-screen md:h-screen h-full bg-sky-50/90 lg:px-10 md:px-10 lg:flex lg:justify-between md:flex md:justify-between items-center dark:bg-[#060d1e]
 }
 
+.homeDiv1{
+	@apply lg:w-1/2 md:w-1/2 flex justify-center px-10 lg:pt-0 pt-40
+}
+
+.homeDiv2{
+	@apply lg:w-1/2 md:w-1/2 lg:m-0 md:m-0 sm:flex sm:flex-col sm:items-center
+}
+
 .title {
 	@apply flex font-kaushan lg:text-5xl md:text-5xl text-3xl font-bold dark:text-white text-gray-800 
 }
@@ -58,12 +70,39 @@
 	@apply text-sm lg:text-lg md:text-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg flex items-center transition duration-300 transform hover:scale-105 active:scale-95
 }
 
-.contactUs{
-	@apply lg:absolute lg:bottom-[5%] lg:left-[5%] 
+.codeSection{
+	@apply pt-20 w-full lg:pl-32 md:pt-0 lg:pt-0 px-4
 }
 
-.color_check {
-	color: #060d1e;
+.codingBlock{
+	@apply relative bg-gray-100 dark:bg-[#1e1e2e] text-gray-900 dark:text-white rounded-lg p-4 shadow-lg dark:shadow-black/20 w-full max-w-[460px] border border-gray-300 dark:border-gray-700
+    before:absolute before:bottom-[-18px] lg:before:left-3/4 before:left-1/2 before:-translate-x-1/2 
+    before:border-[20px] before:border-solid before:border-t-gray-100 dark:before:border-t-[#1e1e2e] before:border-x-transparent before:border-b-0
+}
+
+.codingBlockTitle{
+	@apply flex items-center space-x-2 pb-2 border-b border-gray-300 dark:border-gray-600
+}
+
+.codingBlockBody{
+	@apply lg:text-sm md:text-sm text-xs font-mono mt-2
+}
+
+.codingComment{
+	@apply text-gray-600 dark:text-green-400
+}
+
+.boySection{
+	@apply w-full flex justify-end content-end mt-4
+}
+
+.boyCoding{
+	@apply w-[380px] lg:ml-auto md:ml-auto lg:m-0 lg:p-0
+}
+
+/* for mobile view i want the contact me section at the end */
+.contactUs{
+	@apply flex justify-center py-10 lg:hidden md:hidden
 }
 
 .skillsDiv {
