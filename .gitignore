@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 ignore_folder
+src/components/TypingBlock.jsx
 dist
 dist-ssr
 *.local

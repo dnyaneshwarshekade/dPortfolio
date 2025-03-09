@@ -39,19 +39,27 @@
 
 /* home page css */
 .home {
-	@apply w-screen h-screen bg-sky-50/90 pl-10 pr-20 flex justify-between items-center dark:bg-[#060d1e]
+	@apply w-screen lg:h-screen md:h-screen h-full bg-sky-50/90 lg:px-10 md:px-10 lg:flex lg:justify-between md:flex md:justify-between items-center dark:bg-[#060d1e]
 }
 
 .title {
-	@apply flex font-kaushan text-5xl font-bold dark:text-white text-gray-800
+	@apply flex font-kaushan lg:text-5xl md:text-5xl text-3xl font-bold dark:text-white text-gray-800 
 }
 
 .skillsType {
-	@apply mt-8 text-2xl font-bold text-gray-800 dark:text-white font-fira
+	@apply mt-6 lg:text-2xl text-lg font-bold text-gray-800 dark:text-white font-fira
 }
 
 .shortIntro {
-	@apply text-lg mt-1 text-gray-800 dark:text-white font-fira
+	@apply lg:text-lg text-sm mt-1 text-gray-800 dark:text-white font-fira
+}
+
+.myJourneyButton{
+	@apply text-sm lg:text-lg md:text-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg flex items-center transition duration-300 transform hover:scale-105 active:scale-95
+}
+
+.contactUs{
+	@apply lg:absolute lg:bottom-[5%] lg:left-[5%] 
 }
 
 .color_check {
