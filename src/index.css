@@ -7,8 +7,18 @@
 @tailwind utilities;
 
 /* start of the taiwlind css */
+
+/* desktop and mobile view i kept one class so it should more easy to use at any location */
+.desktop{
+	@apply lg:block md:block sm:hidden hidden
+}
+
+.mobile{
+	@apply lg:hidden md:hidden sm:block
+}
+
 .navBar {
-	@apply dark:bg-[#080D19] bg-white py-4 px-7 shadow-md z-10 border-black absolute dark:shadow-md dark:shadow-blue-500/50 w-full fixed top-0 left-0
+	@apply dark:bg-[#080D19] bg-white py-4 lg:px-7 md:px-7 px-4 shadow-md z-10 border-black absolute dark:shadow-md dark:shadow-blue-500/50 w-full fixed top-0 left-0
 }
 
 .portFolio {
@@ -17,6 +27,14 @@
 
 .toggleSwitch {
 	@apply p-2 bg-transparent border border-gray-300 dark:border-[#f4f4f5] rounded-full dark:hover:border-blue-500
+}
+
+.dropdownButton {
+	@apply p-2 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white dark:bg-[#080B0D] text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50
+}
+
+.dropdownOption{
+	@apply px-4 py-2 text-sm
 }
 
 /* home page css */
